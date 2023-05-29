@@ -5,9 +5,9 @@
 // USAGE
 ////////
 // $ mg_mmtoin 0.127 0.254 0.508
-// mm: 0.127000    mm: 0.005000
-// mm: 0.254000    mm: 0.010000
-// mm: 0.508000    mm: 0.020000
+// mm: 0.127000    inches: 0.005000
+// mm: 0.254000    inches: 0.010000
+// mm: 0.508000    inches: 0.020000
 
 int main(int argc, char *argv[])
 {
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                printf("mm: %8.6f\tmm: %8.6f\n", strtof(argv[i], &end), strtof(argv[i], &end)/25.4);
+                printf("mm: %8.6f\tinches: %8.6f\n", strtof(argv[i], &end), strtof(argv[i], &end)/25.4);
             }
         }
     }
